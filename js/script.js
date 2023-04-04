@@ -17,18 +17,18 @@ document.addEventListener("click", function (e) {
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
-  loop: true,
+  loop: false,
   centerSlide: "true",
   fade: "true",
   grabCursor: "true",
   pagination: {
-    el: ".swiper-pagination",
+    el: ".cs-pagination",
     clickable: true,
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".cs-next",
+    prevEl: ".cs-prev",
   },
 
   breakpoints: {
@@ -42,4 +42,30 @@ var swiper = new Swiper(".slide-content", {
       slidesPerView: 3,
     },
   },
+});
+
+// about content
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  loop: false,
+  pagination: {
+    el: ".sw-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".sw-next",
+    prevEl: ".sw-prev",
+  },
+  // breakpoints: {
+  //   0: {
+  //     slidesPerView: 1,
+  //   },
+  //   520: {
+  //     slidesPerView: 2,
+  //   },
+  //   950: {
+  //     slidesPerView: 3,
+  //   },
+  // },
 });
